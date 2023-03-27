@@ -18,6 +18,7 @@ metadata:
   name: jfk
   namespace: fleet-local
   labels:
+    environment: bare-metal
     edge-arch: single-node
     region: new-york-area
     airport: jfk
