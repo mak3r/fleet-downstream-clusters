@@ -23,6 +23,7 @@ metadata:
     region: new-york-area
     airport: jfk
     geo: ny
+    demo: true
 spec:
   rkeConfig:
     machinePools:
