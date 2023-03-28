@@ -18,7 +18,7 @@ metadata:
   name: jfk
   namespace: fleet-default
   labels:
-    environment: virtual
+    environment: vm
     edge-arch: single-node
     region: new-york-area
     airport: jfk
