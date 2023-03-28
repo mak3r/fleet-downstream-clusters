@@ -2,7 +2,7 @@ apiVersion: elemental.cattle.io/v1beta1
 kind: MachineInventorySelectorTemplate
 metadata:
   name: jfk-machine-selector
-  namespace: fleet-local
+  namespace: fleet-default
 spec:
   template:
     spec:
@@ -16,7 +16,7 @@ kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
   name: jfk
-  namespace: fleet-local
+  namespace: fleet-default
   labels:
     environment: virtual
     edge-arch: single-node
