@@ -1,0 +1,17 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: downstream-demo
+  namespace: fleet-local
+spec:
+  branch: main
+  paths:
+    - /cluster001/
+  repo: https://github.com/mak3r/fleet-downstream-clusters
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester
