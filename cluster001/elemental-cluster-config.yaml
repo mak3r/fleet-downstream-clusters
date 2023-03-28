@@ -18,7 +18,7 @@ metadata:
   name: jfk
   namespace: fleet-local
   labels:
-    environment: vm
+    environment: virtual
     edge-arch: single-node
     region: new-york-area
     airport: jfk
@@ -28,6 +28,7 @@ spec:
     machinePools:
       - controlPlaneRole: true
         etcdRole: true
+        workerRole: true
         machineConfigRef:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
@@ -35,5 +36,4 @@ spec:
         name: pool1
         quantity: 1
         unhealthyNodeTimeout: 0s
-        workerRole: true
   kubernetesVersion: v1.23.7+k3s1
