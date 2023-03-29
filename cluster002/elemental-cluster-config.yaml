@@ -23,7 +23,6 @@ metadata:
     region: dc
     airport: iad
     geo: dc
-    scope: yellow
 spec:
   rkeConfig:
     machinePools:
