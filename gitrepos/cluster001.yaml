@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: downstream-demo
+  name: downstream-cluster001
   namespace: fleet-local
 spec:
   branch: main
