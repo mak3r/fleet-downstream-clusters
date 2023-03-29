@@ -23,6 +23,7 @@ metadata:
     region: dallas
     airport: dfw
     geo: tx
+    mode: none
 spec:
   rkeConfig:
     machinePools:
