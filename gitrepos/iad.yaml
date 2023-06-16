@@ -1,0 +1,17 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: iad-cluster-config
+  namespace: fleet-local
+spec:
+  branch: main
+  paths:
+    - /airports/iad/
+  repo: https://github.com/mak3r/fleet-downstream-clusters
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester

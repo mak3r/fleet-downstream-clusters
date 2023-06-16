@@ -1,12 +1,12 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: downstream-cluster001
+  name: jfk-cluster-config
   namespace: fleet-local
 spec:
   branch: main
   paths:
-    - /cluster001/
+    - /airports/jfk/
   repo: https://github.com/mak3r/fleet-downstream-clusters
   targets:
     - clusterSelector:
