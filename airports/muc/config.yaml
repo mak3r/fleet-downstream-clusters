@@ -22,6 +22,7 @@ metadata:
     edge-arch: single-node
     corp: suse
     location: de
+    managed: managed
 spec:
   rkeConfig:
     machinePools:
