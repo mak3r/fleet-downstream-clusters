@@ -24,6 +24,7 @@ metadata:
     airport: jfk
     geo: ny
     demo: false
+    managed: true
 spec:
   rkeConfig:
     machinePools:
