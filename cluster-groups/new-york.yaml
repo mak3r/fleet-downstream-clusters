@@ -1,9 +1,9 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterGroup
 metadata:
-  name: netherlands
+  name: new-york
   namespace: fleet-default
 spec:
   selector:
     matchLabels:
-      geo: nl
+      geo: ny

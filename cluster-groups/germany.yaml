@@ -6,4 +6,4 @@ metadata:
 spec:
   selector:
     matchLabels:
-      location: de
+      geo: de
